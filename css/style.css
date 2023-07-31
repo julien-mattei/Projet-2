@@ -104,7 +104,6 @@ body {
 
 .menu a {
     padding-top: 15px;
-    padding-bottom: 0;
 }
 
 .menu a:hover {
@@ -139,6 +138,12 @@ input {
     width: 120px;
     border-radius: 0 15px 15px 0;
     border: none;
+}
+
+.search::before{
+    content: "Rechercher";
+    position: relative;
+    top: 25%;
 }
 
 .filter {
@@ -322,6 +327,20 @@ section {
     .menu a:hover {
         border-top: none;
         border-bottom: 2px solid var(--main-color);
+    }
+
+    .fa-magnifying-glass {
+        color: white;
+    }
+
+    .search {
+        height: 50px;
+        width: 50px;
+        border-radius: 15px;
+    }
+
+    .search::before {
+        content: "";
     }
 
     .filter-btn {
