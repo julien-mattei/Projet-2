@@ -115,6 +115,7 @@ body {
 /* INFORMATIONS */
 input {
     text-align: center;
+    width: 200px;
     height: 50px;
     border: none;
 }
@@ -125,6 +126,10 @@ input {
     height: 50px;
     border-radius:  15px 0 0 15px;
     justify-content: center;
+}
+
+.fa-location-dot {
+    color: black;
 }
 
 .search {
@@ -145,6 +150,9 @@ input {
     padding: 0 17px;
 }
 
+.filter .infos-txt {
+    font-size: 17px;
+}
 .filter:hover {
     background: var(--filter-bg-color);
 }
@@ -243,6 +251,14 @@ section {
         align-items: flex-start;
     }
 
+    .filter .infos-txt {
+        font-size: 16px;
+    }
+
+    #card-2 {
+        order: -1;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -274,6 +290,10 @@ section {
 }    
 
 @media (max-width:767.98px) {
+    .main-container {
+        padding: 0;
+    }
+    
     header {
         flex-wrap: wrap;
         justify-content: center;
@@ -288,11 +308,15 @@ section {
     .menu {
         justify-content: space-around;
         width: 100%;
+        gap: 0;
     }
 
     .menu a {
+        display: flex;
         padding-top: 0;
+        width: 50%;
         padding-bottom: 15px;
+        justify-content: center;
     }
     
     .menu a:hover {
@@ -308,6 +332,11 @@ section {
 
     .filter {
         width: 45%;
+        gap: 5px;
+    }
+
+    .filter .infos-txt {
+        font-size: 14px;
     }
 
     .populaires-cards {
@@ -356,5 +385,25 @@ section {
     .footer {
         flex-direction: column;
         gap: 30px;
+    }
+
+    #card-2 {
+        order: -5;
+    }
+
+    #card-5 {
+        order: -4;
+    }
+
+    #card-3 {
+        order: -3;
+    }
+
+    #card-4 {
+        order: -2;
+    }
+
+    #card-6 {
+        order: -1;
     }
 } 
